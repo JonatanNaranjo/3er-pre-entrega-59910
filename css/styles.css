@@ -1,0 +1,278 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Estilos de Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8e3a3;
+    padding: 1rem 20px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos del Main */
+main {
+    text-align: center;
+    padding: 40px;
+    background-color: #f8e3a3;
+    margin-top: 10px;
+}
+
+main h1 {
+    margin-bottom: 40px;
+}
+
+main h2 {
+    text-align: left;
+}
+
+main .marcas-logos {
+    width: 90%;
+    height: 90%;
+}
+
+main .boton, main .boton2 {
+    background-color: black;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+main .boton a, main .boton2 a {
+    color: #f8e3a3;
+    text-decoration: none;
+}
+
+/* Estilos de Section */
+section {
+    text-align: center;
+    background-color: #a2a4a4;
+    margin: 10px 0 15px;
+    padding-bottom: 50px;
+    border-radius: 15px;
+}
+
+section .boton2 {
+    background-color: #f8e3a3;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+section .boton2 a {
+    color: black;
+    text-decoration: none;
+}
+
+section .productos2 {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos de Footer */
+/* Estilos de Footer */
+footer {
+    background-color: #ced8e0;
+    color: black;
+    padding: 40px 20px; /* Mayor padding para un diseño más espacioso */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en caso de espacio reducido */
+    gap: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Controla el ancho máximo del footer */
+    margin: 0 auto; /* Centra el contenedor dentro del footer */
+}
+
+.footer-section {
+    flex: 1; /* Hace que cada sección ocupe el mismo espacio disponible */
+    padding: 0 20px; /* Espacio interno en cada sección */
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: block; /* Hace que cada enlace ocupe toda la línea */
+    margin-bottom: 5px; /* Espaciado entre enlaces */
+    color: black;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: orangered; /* Cambia el color al pasar el cursor */
+}
+
+.footer-info {
+    text-align: left;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-top: 20px; /* Espacio adicional arriba para separar del contenido anterior */
+}
+
+.logo-naranja {
+    width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+
+
+.logos, .productos {
+    display: flex;
+}
+
+.contenedor {
+    height: auto; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.footer-section {
+    padding: 10px;
+}
+
+.logo-naranja {
+    width: 250px;
+}
+
+.firma-footer, .listado {
+    text-align: left;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+header img {
+    vertical-align: middle;
+}
+
+nav ul {
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    padding: 10px;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: orangered;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    padding: 15px;
+    text-align: left;
+}
+
+form fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+form input[type="submit"], form input[type="reset"] {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+form input[type="submit"]:hover, form input[type="reset"]:hover {
+    background-color: #e67e22;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .contenedor {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+}

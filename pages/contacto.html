@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto - Naranjo Tattoo Supplies</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img class="logo-principal" src="../img/logo-naranja.png" alt="logo-naranja" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/tienda.html">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/preguntas.html">Preguntas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <h1>Contactanos</h1>
+        <form>
+            <fieldset>
+                <legend>Envianos un Mensaje</legend>
+
+                <div>
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Nombre y Apellido">
+                </div>
+
+                <div>
+                    <label for="email">Ingresa tu Email</label>
+                    <input type="email" name="email" id="email" required placeholder="Dirección de Email">
+                </div>
+
+                <div>
+                    <label for="telefono">Número de Teléfono (Opcional)</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Número de Teléfono">
+                </div>
+
+                <div>
+                    <label for="comentarios">Dejanos tus Comentarios</label>
+                    <textarea id="comentarios" rows="7" cols="50" placeholder="Comentarios"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar Comentarios">
+                    <input type="reset" value="Borrar Todo">
+                </div>
+
+                <a href="#">
+                    <img src="../img/logo-naranja.png" alt="" width="200">
+                </a>
+            </fieldset>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Información de contacto -->
+            <div class="footer-section footer-info">
+                <h3>Encontranos en</h3>
+                <p>Laprida 151<br>Galeria Gran Lomas<br>Local 18</p>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="footer-section footer-social">
+                <h3>Redes Sociales</h3>
+                <a href="https://www.instagram.com/jnaranjo.tattoo/" target="_blank">Instagram</a>
+            </div>
+
+            <!-- Información de copyright -->
+            <div class="footer-section footer-copyright">
+                <p class="firma-footer">Copyright Naranjo Tattoo Supplies 2024. Desarrollado por Jonatan Naranjo🍊</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (dependencias de Popper.js y jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
