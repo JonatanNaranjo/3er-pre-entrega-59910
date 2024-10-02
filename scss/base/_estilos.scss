@@ -1,0 +1,29 @@
+//import de variables
+@import "../utilidades/variables";
+
+//import de mixin
+@import "../utilidades/mixin";
+
+//import header
+@import "../utilidades/header";
+
+//import main
+@import "../utilidades/main";
+
+//import section
+@import "../utilidades/section";
+
+//import footer
+@import "../utilidades/footer";
+
+//import mq tablet
+@import "../utilidades/mq-tablet";
+
+//import mq mobile
+@import "../utilidades/mq-mobile";
+
+/* estilos */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}

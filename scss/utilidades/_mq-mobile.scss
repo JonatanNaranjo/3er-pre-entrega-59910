@@ -1,0 +1,11 @@
+// estilos mq mobile
+@include responsive(mobile) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contenedor {
+      grid-template-columns: 1fr;
+    }
+}
