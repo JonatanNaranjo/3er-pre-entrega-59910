@@ -1,26 +1,28 @@
 // estilos de header
 header {
-    @include flex-center(row, space-between);
-    background-color: $background-header;
-    padding: 1rem 20px;
-  
-    nav {
-      ul {
-        @include flex-center(row, flex-end);
-        list-style: none;
-  
-        li {
-          margin-left: 30px;
-  
-          a {
-            text-decoration: none;
-            color: $color-black;
-          }
+  @include flex-center(row, space-between);
+  background-color: $background-header;
+  padding: 1rem 20px;
+
+  nav {
+    width: 100%; // Aquí agregamos el ancho del nav al 100%
+    
+    ul {
+      @include flex-center(row, flex-end);
+      list-style: none;
+
+      li {
+        margin-left: 30px;
+
+        a {
+          text-decoration: none;
+          color: $color-black;
         }
       }
     }
   }
-  
-  header img {
-    vertical-align: middle;
-  }
+}
+
+header img {
+  vertical-align: middle;
+}

@@ -1,11 +1,31 @@
 // estilos mq mobile
 @include responsive(mobile) {
-    header {
+  header {
       flex-direction: column;
       align-items: center;
-    }
-  
-    .contenedor {
+  }
+
+  .contenedor {
       grid-template-columns: 1fr;
-    }
+      padding: 0; 
+      margin: 0;  
+  }
+
+  .listado {
+      margin-bottom: 25rem; // Espacio entre el listado y las filas de imágenes
+  }
+
+  .fila-arriba,
+  .fila-abajo {
+      display: flex; 
+      justify-content: center; 
+      margin-bottom: 1rem; 
+  }
+
+  .fila-arriba img,
+  .fila-abajo img {
+      width: calc(33.33% - 1rem);
+      margin: 0.5rem;
+      height: auto;
+  }
 }

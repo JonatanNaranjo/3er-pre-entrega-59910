@@ -1,20 +1,39 @@
 // estilos de mq tablet
 @include responsive(tablet) {
     header nav ul {
-      flex-direction: column;
-      align-items: center;
-  
-      li {
-        margin-left: 0;
-        margin-bottom: 10px;
-      }
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
     }
-  
+
     main {
-      padding: 20px;
+        padding: 20px;
     }
-  
+
     .contenedor {
-      margin-left: 0;
+        margin-left: 0;
+        margin-top: 1rem; 
     }
-  }
+
+    .listado {
+        margin-bottom: 25rem; // Espacio entre el listado y las filas de imágenes
+    }
+
+    .fila-arriba,
+    .fila-abajo {
+        display: flex; 
+        justify-content: center; 
+        margin-bottom: 1rem; 
+    }
+
+    .fila-arriba img,
+    .fila-abajo img {
+        width: calc(33.33% - 1rem); 
+        margin: 0.5rem; 
+        height: auto; 
+    }
+}

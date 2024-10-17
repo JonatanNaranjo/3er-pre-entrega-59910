@@ -28,6 +28,16 @@ main {
     display: inline-block;
     margin: 20px 0;
   }
+
+  // Estilos para los botones de entrada en la página de contacto
+  input[type="submit"], input[type="reset"] {
+    background-color: orange; 
+    color: $color-black; 
+    border-radius: 10px; 
+    border: 2px solid orange; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+  }
 }
 
 .contenedor {
@@ -60,4 +70,37 @@ main {
       margin-right: 10px; 
     }
   }
+}
+
+.contenido {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+
+  .texto {
+      flex: 1; 
+      margin-right: 20px;
+  }
+
+  .estudio-nosotros {
+    flex: 0 0 40%;
+    position: relative;
+
+    img {
+        width: 100%; 
+        height: auto; 
+        display: block; 
+    }
+
+    &:before {
+        content: "";
+        position: absolute; 
+        top: 0; 
+        left: 0;
+        right: 0; 
+        bottom: 0; 
+        background: linear-gradient(to right, #f8e3a3 0%, rgba(255, 255, 255, 0) 50%); 
+        pointer-events: none;
+    }
+}
 }

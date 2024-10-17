@@ -13,6 +13,9 @@ header {
   background-color: #f8f9fa;
   padding: 1rem 20px;
 }
+header nav {
+  width: 100%;
+}
 header nav ul {
   display: flex;
   flex-direction: row;
@@ -61,6 +64,14 @@ main .boton, main .boton2 {
   display: inline-block;
   margin: 20px 0;
 }
+main input[type=submit], main input[type=reset] {
+  background-color: orange;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid orange;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
 .contenedor {
   display: flex;
@@ -90,12 +101,46 @@ main .boton, main .boton2 {
   margin-right: 10px;
 }
 
+.contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contenido .texto {
+  flex: 1;
+  margin-right: 20px;
+}
+.contenido .estudio-nosotros {
+  flex: 0 0 40%;
+  position: relative;
+}
+.contenido .estudio-nosotros img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.contenido .estudio-nosotros:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #f8e3a3 0%, rgba(255, 255, 255, 0) 50%);
+  pointer-events: none;
+}
+
 section {
-  text-align: center;
+  text-align: left;
   background-color: #a2a4a4;
   margin: 10px 0 15px;
+  padding: 20px;
   padding-bottom: 50px;
   border-radius: 15px;
+}
+section .boton-container {
+  text-align: center;
+  margin: 20px 0;
 }
 section .boton2 {
   background-color: #f8f9fa;
@@ -104,7 +149,6 @@ section .boton2 {
   border-radius: 15px;
   text-decoration: none;
   display: inline-block;
-  margin: 20px 0;
 }
 section .productos2 {
   width: 100%;
@@ -133,6 +177,7 @@ footer .footer-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 footer .footer-container .footer-section {
   flex: 1;
@@ -158,8 +203,11 @@ footer .footer-social {
   text-align: center;
 }
 footer .footer-copyright {
+  width: 100%;
   text-align: center;
   padding-top: 20px;
+  border-top: 1px solid #333;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -176,6 +224,22 @@ footer .footer-copyright {
   }
   .contenedor {
     margin-left: 0;
+    margin-top: 1rem;
+  }
+  .listado {
+    margin-bottom: 25rem;
+  }
+  .fila-arriba,
+  .fila-abajo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .fila-arriba img,
+  .fila-abajo img {
+    width: calc(33.33% - 1rem);
+    margin: 0.5rem;
+    height: auto;
   }
 }
 @media (max-width: 480px) {
@@ -185,6 +249,23 @@ footer .footer-copyright {
   }
   .contenedor {
     grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+  }
+  .listado {
+    margin-bottom: 25rem;
+  }
+  .fila-arriba,
+  .fila-abajo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .fila-arriba img,
+  .fila-abajo img {
+    width: calc(33.33% - 1rem);
+    margin: 0.5rem;
+    height: auto;
   }
 }
 /* estilos */
